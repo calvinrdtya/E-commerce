@@ -18,7 +18,7 @@ class Category extends Model
 
     public function getThumbnailsPathAttribute()
     {
-        return asset('storage/'. $this->thumbnails);
+        return asset('/storage/'. $this->thumbnails);
     }
 
 }

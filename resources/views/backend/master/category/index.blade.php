@@ -24,7 +24,7 @@
                         <tr>
                             <td>{{ $category->name }}</td>
                             <td>{{ $category->slug }}</td>
-                            <td><img src="{{ $category->thumbnails_path }}" alt="" width="200"></td>
+                            <td><img src="{{ $category->thumbnails_path }}" alt="" width="50"></td>
                             <td>{{ $category->Products()->count() }}</td>
                             <td>
                                 <x-button.dropdown-button :title="__('field.action')">

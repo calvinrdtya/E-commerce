@@ -38,13 +38,6 @@
                                             <img src="{{ asset($carts->Product->thumbnails_path) }}" alt="" width="90">
                                             <div class="cart__product__item__title">
                                                 <h6>{{ $carts->Product->name }}</h6>
-                                                <div class="rating">
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                </div>
                                             </div>
                                         </td>
                                         <td class="cart__price">{{ $carts->Product->price_rupiah }}</td>

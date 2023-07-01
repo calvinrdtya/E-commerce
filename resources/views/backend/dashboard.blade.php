@@ -65,7 +65,7 @@
             </div>
         </div>
     </div>
-    <div class="row">
+    {{-- <div class="row">
         <div class="col-md-12">
             <div class="card">
               <div class="card-header">
@@ -81,7 +81,8 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
+    
     <div class="row">
         <div class="col-lg-8">
           <div class="card">
@@ -125,25 +126,22 @@
             <div class="card-body">
                 <div class="owl-carousel owl-theme" id="products-carousel">
                     @foreach ($data['best_products'] as $best_product)
-                        <div>
-                            <div class="product-item pb-3">
+                    <div>
+                        <div class="product-item pb-3">
                                 <div class="product-image">
                                     <img alt="image" src="{{ $best_product->thumbnails_path }}" class="img-fluid">
                                 </div>
                                 <div class="product-details">
                                     <div class="product-name">{{ $best_product->name }}</div>
-                                    <div class="product-review">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
                                     <div class="text-muted text-small">{{ $best_product->total_sold }}
                                         {{ __('text.sold') }}</div>
+                                        {{-- @foreach ($data['product'] as $product)
                                     <div class="product-cta">
-                                        <a href="#" class="btn btn-primary">Detail</a>
+                                        <a class="btn btn-primary" href="{{ route('master.product.show',$product->id) }}"><i class="far fa-eye"></i>
+                                            {{ __('button.detail') }}</a>
+                                        <a href="" class="btn btn-primary">Detail</a>
                                     </div>
+                                    @endforeach --}}
                                 </div>
                             </div>
                         </div>
@@ -158,7 +156,7 @@
               {!! $data['chartPie']->container() !!}
             </div>
           </div>
-          <div class="card card-hero">
+          {{-- <div class="card card-hero">
             <div class="card-header">
                 <div class="card-icon">
                     <i class="far fa-question-circle"></i>
@@ -203,7 +201,7 @@
                     </a>
                 </div>
             </div>
-        </div>
+            </div> --}}
         </div>
     </div>
     <div class="row">

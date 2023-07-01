@@ -16,6 +16,9 @@
                         <p class="text-danger">{{ $message }}</p>
                     @enderror
                 </div>
+                <div class="text-center">
+                    <p>Sudah ingat Password ? <a href="{{ route('login') }}">Login Disini</a></p>
+                </div>
 
                 <button type="submit" class="site-btn w-100 rounded-0 mb-3">Kirim</button>
             </form>

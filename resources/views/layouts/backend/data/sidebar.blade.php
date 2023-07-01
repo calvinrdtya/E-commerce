@@ -1,17 +1,17 @@
 <div class="main-sidebar">
     <aside id="sidebar-wrapper">
       <div class="sidebar-brand">
-        <a href="index.html">Stisla</a>
+        <a href="index.html">BAGRDLA.CO</a>
       </div>
       <div class="sidebar-brand sidebar-brand-sm">
-        <a href="index.html">St</a>
+        <a href="index.html"></a>
       </div>
       <ul class="sidebar-menu">
           <li class="menu-header">Menu Admin</li>
-          <li><a class="nav-link" href="{{ route('admin.dashboard') }}"><i class="fas fa-tachometer-alt"></i> <span> {{ __('menu.dashboard') }}</span></a></li>
+          <li><a class="nav-link" href="{{ route('admin.dashboard') }}"><i class="fas fa-chart-line"></i><span> {{ __('menu.dashboard') }}</span></a></li>
           <li><a class="nav-link" href="{{ route('customer.index') }}"><i class="fas fa-users"></i> <span> {{ __('menu.customer') }}</span></a></li>
           <li class="nav-item dropdown">
-            <a href="#" class="nav-link has-dropdown"><i class="fas fa-table"></i><span>Master</span></a>
+            <a href="#" class="nav-link has-dropdown"><i class="fas fa-store"></i></i><span>Shop</span></a>
             <ul class="dropdown-menu">
               <li><a class="nav-link" href="{{ route('master.category.index') }}">{{ __('menu.category') }}</a></li>
               <li><a class="nav-link" href="{{ route('master.product.index') }}">{{ __('menu.product') }}</a></li>

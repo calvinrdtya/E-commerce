@@ -41,7 +41,7 @@
             @stack('modal')
             @include('layouts.backend.data.footer')
         </div>
-    </div>w
+    </div>
     @include('layouts.backend.data.scripts')
 </body>
 
